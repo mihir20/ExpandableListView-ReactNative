@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import Header from './components/common/Header';
+import LibraryList from './components/LibraryList';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       <Provider store={createStore(reducers)} >
       <View>
         <Header headerText="Expand" />
+        <LibraryList />
       </View>
       </Provider>
   );

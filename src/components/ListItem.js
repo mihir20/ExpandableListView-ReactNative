@@ -1,8 +1,16 @@
-import { components } from 'react';
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+import CardItem from './common/CardItem';
 
-class ListItem extends components {
+class ListItem extends Component {
     render() {
-        return null;
+       // console.log(this.props.library);
+        return (
+        <CardItem>
+          <Text>
+            {this.props.library.title}
+          </Text>
+        </CardItem>);
     }
 
 }
