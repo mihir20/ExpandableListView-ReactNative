@@ -7,12 +7,18 @@ class ListItem extends Component {
        // console.log(this.props.library);
         return (
         <CardItem>
-          <Text>
+          <Text style={Styles.textStyle}>
             {this.props.library.title}
           </Text>
         </CardItem>);
     }
 
 }
+const Styles = {
+    textStyle: {
+     fontSize: 18,
+     paddingLeft: 15
+    }
+};
 
 export default ListItem;
